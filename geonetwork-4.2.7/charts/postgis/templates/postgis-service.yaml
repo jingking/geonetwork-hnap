@@ -1,0 +1,20 @@
+{{- if .Values.create_postgis_pod }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "postgis.fullname" . }}
+  annotations:
+    geonetwork-hnap.version: {{ .Chart.Version }}
+  labels:
+{{ include "postgis.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: tcp
+      protocol: TCP
+      name: tcp
+  selector:
+    geonetwork-hnap/app: {{ include "postgis.name" . }}
+    geonetwork-hnap/siteName: {{ .Release.Name }}
+{{- end}}

@@ -1,0 +1,20 @@
+{{- if .Values.create_ogcapi_pod }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "ogcapi.fullname" . }}
+  annotations:
+    geonetwork-hnap.version: {{ .Chart.Version }}
+  labels:
+{{ include "ogcapi.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: tcp
+      protocol: TCP
+      name: tcp
+  selector:
+      geonetwork-hnap/app: {{ include "ogcapi.name" . }}
+      geonetwork-hnap/siteName: {{ .Release.Name }}
+{{- end}}
