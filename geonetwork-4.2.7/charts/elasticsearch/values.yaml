@@ -1,0 +1,32 @@
+# Default values for elasticsearch.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+create_elasticsearch_pod: true
+
+replicaCount: 1
+
+image:
+  repository: elasticsearch
+  tag: 7.11.1
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: "elasticsearch"
+
+service:
+  type: ClusterIP
+  port: 9200
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+pvc:
+  size: 100Mi
+  storageClassName: local-storage

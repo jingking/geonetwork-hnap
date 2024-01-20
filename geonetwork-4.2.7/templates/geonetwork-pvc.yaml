@@ -1,0 +1,12 @@
+{{- $global := .Values.global | default dict }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "geonetwork.fullname" . }}-pvc
+spec:
+  accessModes:
+  - {{ $global.accessMode | default "ReadWriteOnce" }}
+  resources:
+    requests:
+      storage: {{ .Values.pvc.size }}
+  storageClassName: {{ $global.storageClassName | default .Values.pvc.storageClassName }}
