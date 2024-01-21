@@ -34,4 +34,4 @@ postgres:
 
 pvc:
   size: 1Gi
-  storageClassName: local-storage
+  storageClassName: default

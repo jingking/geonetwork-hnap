@@ -29,4 +29,4 @@ affinity: {}
 
 pvc:
   size: 100Mi
-  storageClassName: local-storage
+  storageClassName: default

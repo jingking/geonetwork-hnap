@@ -24,13 +24,17 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
     {{- end }}
+      securityContext:
+        runAsUser: 999
+        runAsGroup: 999
+        fsGroup: 999
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: DATA_DIR
-              value: "/catalogue-data"
+              value: /catalogue-data
             - name: ES_HOST
               value: {{ .Values.elasticsearch.host }}
             - name: ES_PORT
