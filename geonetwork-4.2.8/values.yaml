@@ -20,7 +20,7 @@ replicaCount: 1
 image:
   repository: jingking/geonetwork-hnap
   #use "geonetwork" for standard geonetwork without HNAP plug-in
-  tag: 4.2.7
+  tag: 4.2.8
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []

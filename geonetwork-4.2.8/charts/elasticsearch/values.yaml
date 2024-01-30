@@ -1,23 +1,23 @@
-# Default values for kibana.
+# Default values for elasticsearch.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-create_kibana_pod: true
+create_elasticsearch_pod: true
 
 replicaCount: 1
 
 image:
-  repository: kibana
-  tag: 7.11.1
+  repository: elasticsearch
+  tag: 7.17.15
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: "kibana"
+fullnameOverride: "elasticsearch"
 
 service:
   type: ClusterIP
-  port: 5601
+  port: 9200
 
 resources: {}
 
@@ -27,7 +27,6 @@ tolerations: []
 
 affinity: {}
 
-elasticsearch:
-  url: http://elasticsearch:9200/
-  host: elasticsearch
-  port: 9200
+pvc:
+  size: 100Mi
+  storageClassName: default
