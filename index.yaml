@@ -13,7 +13,44 @@ entries:
           url: https://github.com/jingking/geonetwork-k8s/issues
     apiVersion: v1
     appVersion: "1.0"
-    created: "2024-01-21T22:54:28.2931Z"
+    created: "2024-01-31T03:54:52.166981365Z"
+    description: Helm Chart for GeoNetowrk with Harmonized North American Profile
+      (HNAP) plugin v4.2.8
+    digest: bef917dbb49b6d54b43198911ff8d68c02382c95df339f6c69bc4f3c27243358
+    home: https://github.com/geonetwork/
+    icon: https://www.osgeo.org/wp-content/uploads/GeoNetwork-1_740x412_acf_cropped.png
+    keywords:
+    - geonetwork
+    - hnap
+    - geospatial
+    - geodata
+    - web
+    - postresql
+    - postgis
+    maintainers:
+    - email: geonetwork-k8s@jingking.net
+      name: jingking
+      url: https://github.com/jingking/geonetwork-k8s
+    name: geonetwork-k8s
+    sources:
+    - https://github.com/jingking/geonetwork-k8s
+    - https://github.com/geonetwork
+    urls:
+    - https://jingking.github.io/geonetwork-k8s/geonetwork-k8s-4.2.8.tgz
+    version: 4.2.8
+  - annotations:
+      artifacthub.io/category: storage
+      artifacthub.io/license: GPL3
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://jingking.github.io/geonetwork-k8s/
+        - name: GeoNetwork
+          url: https://github.com/geonetwork/
+        - name: support
+          url: https://github.com/jingking/geonetwork-k8s/issues
+    apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-01-31T03:54:52.162621013Z"
     description: Helm Chart for GeoNetowrk with Harmonized North American Profile
       (HNAP) plugin v4.2.7
     digest: 90d24d2c95e4e481ed13ff07b40b3fbb4fcff0cc1f34b6f92f0807cf715ba9bd
@@ -38,4 +75,4 @@ entries:
     urls:
     - https://jingking.github.io/geonetwork-k8s/geonetwork-k8s-4.2.7.tgz
     version: 4.2.7
-generated: "2024-01-21T22:54:28.290163708Z"
+generated: "2024-01-31T03:54:52.158821582Z"
