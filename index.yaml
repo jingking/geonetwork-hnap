@@ -13,10 +13,10 @@ entries:
           url: https://github.com/jingking/geonetwork-k8s/issues
     apiVersion: v1
     appVersion: "1.0"
-    created: "2024-01-31T03:54:52.166981365Z"
+    created: "2024-02-02T02:37:10.543500977Z"
     description: Helm Chart for GeoNetowrk with Harmonized North American Profile
       (HNAP) plugin v4.2.8
-    digest: bef917dbb49b6d54b43198911ff8d68c02382c95df339f6c69bc4f3c27243358
+    digest: ebfa9a872051d0587323b87c41a91299ab0cfa3c0df1d49bac1da5db5af14228
     home: https://github.com/geonetwork/
     icon: https://www.osgeo.org/wp-content/uploads/GeoNetwork-1_740x412_acf_cropped.png
     keywords:
@@ -50,7 +50,7 @@ entries:
           url: https://github.com/jingking/geonetwork-k8s/issues
     apiVersion: v1
     appVersion: "1.0"
-    created: "2024-01-31T03:54:52.162621013Z"
+    created: "2024-02-02T02:37:10.540119256Z"
     description: Helm Chart for GeoNetowrk with Harmonized North American Profile
       (HNAP) plugin v4.2.7
     digest: 90d24d2c95e4e481ed13ff07b40b3fbb4fcff0cc1f34b6f92f0807cf715ba9bd
@@ -75,4 +75,4 @@ entries:
     urls:
     - https://jingking.github.io/geonetwork-k8s/geonetwork-k8s-4.2.7.tgz
     version: 4.2.7
-generated: "2024-01-31T03:54:52.158821582Z"
+generated: "2024-02-02T02:37:10.537016845Z"
