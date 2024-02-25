@@ -35,3 +35,13 @@ postgres:
 pvc:
   size: 1Gi
   storageClassName: default
+
+# values for the Azure AD Integration
+security:
+  type: default 
+  #openidconnect
+  openidconnect:
+    clientsecret: 
+    clientid: 
+    #servermetadatajson: #please update the ad_config.json file
+    idtokenrolelocation: roles

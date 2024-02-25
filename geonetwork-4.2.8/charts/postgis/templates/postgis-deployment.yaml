@@ -51,8 +51,9 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:
-            - mountPath: "/var/lib/postgresql"
+            - mountPath: "/var/lib/postgresql/data"
               name: postgis-volume
+              subPath: pg
             - name: init-postgres
               mountPath: /docker-entrypoint-initdb.d
 
